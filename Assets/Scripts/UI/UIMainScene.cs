@@ -28,6 +28,10 @@ public class UIMainScene : MonoBehaviour
         InfoPopup.gameObject.SetActive(false);
         ResourceDB.Init();
     }
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     private void OnDestroy()
     {
@@ -73,4 +77,5 @@ public class UIMainScene : MonoBehaviour
             InfoPopup.Name.text = content.GetName();
         }
     }
+    
 }
